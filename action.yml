@@ -1,0 +1,24 @@
+name: 'Discloud Deploy'
+description: 'Deploy your project to Discloud'
+author: 'KingTimer'
+inputs:
+  token:
+    description: 'Discloud API token'
+    required: true
+  appID:
+    description: 'Application id'
+    required: true
+  teams:
+    description: 'Your app is a team app'
+    default: false,
+    required: true
+  path:
+    description: 'Folder path to deploy'
+    default: './src'
+    required: true
+runs:
+  using: node20
+  main: dist/index.js
+branding:
+  icon: upload-cloud
+  color: 'blue'

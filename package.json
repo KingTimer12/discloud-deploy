@@ -1,0 +1,20 @@
+{
+  "name": "discloud-deploy",
+  "version": "1.0.0",
+  "description": "Discloud Deploy is not an official Discloud product. It was created by a user who uses their products.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "ncc build src/*"
+  },
+  "keywords": ["discloud", "deploy"],
+  "author": "KingTimer",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.0",
+    "@actions/github": "^6.0.0",
+    "@vercel/ncc": "^0.38.2",
+    "archiver": "^7.0.1",
+    "discloud.app": "^0.12.1"
+  }
+}
